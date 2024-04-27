@@ -94,7 +94,7 @@ function displayWeather(currentWeatherData, forecastData) {
     } else {
         const temperature = currentWeatherData.current.temp_c;
         const description = currentWeatherData.current.condition.text;
-        const iconUrl = `http:${currentWeatherData.current.condition.icon}`;
+        const iconUrl = `https:${currentWeatherData.current.condition.icon}`;
         const city = currentWeatherData.location.name;
 
         const temperatureHTML = `<p>${temperature}°C</p>`;
@@ -137,7 +137,7 @@ function displayWeather(currentWeatherData, forecastData) {
                 const time = new Date(hour.time_epoch * 1000);
                 const hourTime = time.getHours();
                 const temperatureC = hour.temp_c;
-                const weatherIconUrl = `http:${hour.condition.icon}`;
+                const weatherIconUrl = `https:${hour.condition.icon}`;
 
                 const hourHTML = `
                     <p>${hourTime}:00</p>
