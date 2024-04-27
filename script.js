@@ -1,4 +1,9 @@
-
+window.onload = () => {
+    const permission = window.confirm("Allow this website to access your location to show accurate weather information?");
+    if (permission) {
+        getLocationWeather();
+    }
+};
 
 function getLocationWeather() {
     if (!navigator.geolocation) {
