@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <div class="search-container">
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <div id="weather-info">
+            <div id="city-name"></div>
+            <div id="temp-div"></div>
+            <div id="weather-icon"></div>
+        </div>
+
+        <button id="additional-info-toggle" onclick="toggleAdditionalInfo()">Show Additional Info</button>
+        <div id="additional-info" style="display: none;"></div>
+
+        <h3 id="hourly-heading">Hourly Forecast</h3>
+        <div id="hourly-forecast"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
