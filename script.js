@@ -26,7 +26,7 @@ function getLocationWeather() {
 
 function getWeatherByCoordinates(latitude, longitude) {
     const apiKey = 'd3f08c9342eb4100b83152142242604';
-    const weatherApiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}&aqi=yes`;
+    const weatherApiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}&aqi=yes`;
 
     fetch(weatherApiUrl)
         .then(response => response.json())
@@ -48,7 +48,7 @@ function getWeather() {
     }
 
     const apiKey = 'd3f08c9342eb4100b83152142242604';
-    const weatherApiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
+    const weatherApiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
 
     fetch(weatherApiUrl)
         .then(response => response.json())
@@ -63,7 +63,7 @@ function getWeather() {
 
 function getHourlyForecast(latitude, longitude, currentWeatherData) {
     const apiKey = 'd3f08c9342eb4100b83152142242604';
-    const forecastApiUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&days=1&aqi=no&alerts=no`;
+    const forecastApiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${latitude},${longitude}&days=1&aqi=no&alerts=no`;
 
     fetch(forecastApiUrl)
         .then(response => response.json())
