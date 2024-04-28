@@ -174,7 +174,7 @@ function setBackground(weatherDescription, isDay) {
     } else {
         if (weatherDescription.includes('Rain')) {
             imageUrl = 'rain.jpg';
-        } else if (weatherDescription.includes('Cloudy')) {
+        } else if (weatherDescription.includes('cloudy')) {
             imageUrl = 'cloud.jpg';
         } else if (weatherDescription.includes('Sunny')) {
             imageUrl = 'sunny.jpg';
